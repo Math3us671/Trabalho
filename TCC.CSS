@@ -1,0 +1,317 @@
+body{
+color: white;
+background-color: black;
+margin: 0;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+
+h1{
+    text-align: center;
+
+
+}
+
+p{
+font-size: 20px;
+
+}
+
+
+.Oinicio{
+
+    background-size: cover;
+    background-position: center;
+}
+
+img{
+height: 200px;
+width: 150px;
+
+}
+
+header{
+background-color: #4a90e2;
+padding: 20px;
+border-bottom: 2px solid white;
+}
+
+nav{
+text-align: center;
+background-color: #000000;
+margin: 0px;
+padding: 10px;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+color: #4a90e2;
+}
+
+
+
+.caixa{
+width: 400px;
+height: 250px;
+flex: wrap;
+justify-content: center;
+
+}
+
+
+.hitbox{
+    text-align: center;
+}
+
+
+table{
+color: white;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
+
+table tr{
+    background-color: rgba(56, 56, 56, 0.295);
+    margin: 10px;
+    display: flex;
+}
+
+table td{
+    padding: 10px;
+    min-width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Cabeçario{
+    margin-bottom: 50px;
+    border-radius: 20px;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.Cabeçario td{
+    padding: 10px;
+    font-size: 35px;
+}
+
+.fundo{
+    height: 100%;
+    width: 100%;
+    background-image: url(armas/ef0376fb21acf4721de2e8420a881047\ \(1\).jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.arma{
+    height: 100px;
+    width: 100px;
+}
+
+.figura{
+    height: 100px;
+    width: 100px;
+}
+
+#karambit{
+    border-left: 10px solid firebrick;
+    background-color: rgba(178, 34, 34, 0.247);
+}
+
+#mac10{
+    border-left: 10px solid rgb(107, 82, 45);
+    background-color: rgba(107, 82, 45, 0.247);
+}
+
+#Aug{
+    border-left: 10px solid rgb(211, 20, 179);
+    background-color: rgba(156, 21, 116, 0.247);
+}
+
+#figura{
+
+
+}
+
+.Perfil{
+ height: 100px;
+ width: 100px;
+ 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
