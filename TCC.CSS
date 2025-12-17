@@ -19,11 +19,16 @@ font-size: 20px;
 
 }
 
+.container{
+     
+
+
+}
 
 .Oinicio{
-
-    background-size: cover;
-    background-position: center;
+    display: flex;
+ align-items: center;
+ flex-direction: column;
 }
 
 img{
@@ -106,7 +111,7 @@ table td{
 .fundo{
     height: 100%;
     width: 100%;
-    background-image: url(armas/ef0376fb21acf4721de2e8420a881047\ \(1\).jpg);
+    background-image: url(Background.jpg);
     background-size: cover;
     background-position: center;
     position: fixed;
