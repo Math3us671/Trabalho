@@ -1,0 +1,112 @@
+.container{
+border: 5px solid;
+padding: 10px;
+display: flex;
+gap: 10px;
+flex-wrap: wrap;
+}
+
+.cards{
+border: 5px solid ;
+padding: 5px;
+background-color: black;
+color: white;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+.cards img{
+height: 200px;
+width: 300px;
+}
+
+.cards p{
+border:10px solid ;
+text-align: center;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Site Pessoal - Cleidosvaldo</title>
+  <meta name="description" content="Site simples em HTML/CSS — portfólio / página pessoal responsiva.">
+  <style>
+    /* Reset simples */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;line-height:1.6;color:#111;background:linear-gradient(180deg,#f7fbff 0%,#ffffff 100%)}
+
+    /* Container */
+    .container{max-width:1100px;margin:0 auto;padding:28px}
+
+    /* Top navigation */
+    header{background:transparent;padding:18px 0}
+    .nav{display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:700;font-size:1.2rem;color:#0f172a}
+    nav ul{display:flex;gap:16px;list-style:none}
+    nav a{text-decoration:none;color:#0f172a;padding:8px;border-radius:8px}
+    nav a:hover{background:rgba(15,23,42,0.06)}
+
+    /* Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;margin-top:28px}
+    .hero h1{font-size:2rem;margin-bottom:12px;line-height:1.05}
+    .hero p{color:#334155}
+    .cta-row{margin-top:18px;display:flex;gap:12px}
+    .btn{display:inline-block;padding:10px 16px;border-radius:10px;text-decoration:none;font-weight:600}
+    .btn-primary{background:#0ea5a4;color:white}
+    .btn-ghost{border:1px solid #cbd5e1;color:#0f172a;background:transparent}
+
+    .hero-visual{background:linear-gradient(135deg,#e6fffa,#ecfeff);border-radius:14px;padding:22px;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 30px rgba(16,24,40,0.06)}
+    .card{width:100%;max-width:320px;background:white;border-radius:10px;padding:18px;box-shadow:0 6px 18px rgba(2,6,23,0.06)}
+
+    /* Features */
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:40px 0}
+    .feature{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    .feature h3{margin-bottom:8px}
+    .feature p{color:#475569;font-size:0.95rem}
+
+    /* Projects / Gallery */
+    .projects{margin:28px 0}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+    .thumb{border-radius:10px;overflow:hidden;min-height:140px;background:linear-gradient(180deg,#e2e8f0,#f8fafc);display:flex;align-items:center;justify-content:center;color:#0f172a;font-weight:600}
+
+    /* Contact */
+    .contact{display:grid;grid-template-columns:1fr 360px;gap:24px;margin-bottom:48px}
+    form{background:white;padding:18px;border-radius:12px;box-shadow:0 6px 18px rgba(2,6,23,0.04)}
+    label{display:block;margin:8px 0 6px;font-weight:600}
+    input,textarea{width:100%;padding:10px;border-radius:8px;border:1px solid #e6edf3}
+    textarea{min-height:120px;resize:vertical}
+
+    footer{padding:28px 0;color:#334155;border-top:1px solid #eef2f7}
+
+    /* Responsividade */
+    @media (max-width:920px){
+      .hero{grid-template-columns:1fr;}
+      .features{grid-template-columns:repeat(2,1fr)}
+      .contact{grid-template-columns:1fr}
+      .grid{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      nav ul{display:none}
+      .brand{font-size:1rem}
+      .features{grid-template-columns:1fr}
+      .grid{grid-template-columns:1fr}
+    }
+
+    /* Small utilities */
+    .muted{color:#64748b}
+    .kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:#f1f5f9;font-weight:700;color:#0f172a;margin-bottom:10px}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="nav">
+        <div class="brand">Cleidosvaldo</div>
+        <nav>
+          <ul>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div>
+          <span class="kicker">Olá — bem-vindo</span>
+          <h1>Eu sou Cleidosvaldo — desenvolvedor e criador<br><small class="muted">Faço sites limpos, rápidos e responsivos.</small></h1>
+          <p class="muted">Este é um modelo simples em HTML e CSS — pronto para personalizar. Tem seção de projetos, descrição de serviços e um contato básico.</p>
+          <div class="cta-row">
+            <a class="btn btn-primary" href="#contato">Fale comigo</a>
+            <a class="btn btn-ghost" href="#projetos">Ver projetos</a>
+          </div>
+        </div>
+        <aside class="hero-visual" aria-hidden="true">
+          <div class="card">
+            <h4>Pequeno cartão</h4>
+            <p class="muted">Use este bloco para destacar algo: skills, estatísticas ou uma foto.</p>
+            <p style="margin-top:12px;font-weight:700">HTML • CSS • JS</p>
+          </div>
+        </aside>
+      </section>
+
+      <section id="sobre" class="features" aria-labelledby="sobre-title">
+        <div class="feature">
+          <h3 id="sobre-title">Design Responsivo</h3>
+          <p>Layouts que se adaptam a diferentes telas — celulares, tablets e desktops.</p>
+        </div>
+        <div class="feature">
+          <h3>Performance</h3>
+          <p>HTML sem dependências externas para carregamento rápido e fácil deploy.</p>
+        </div>
+        <div class="feature">
+          <h3>Manutenível</h3>
+          <p>Código organizado e comentado — pronto para crescer com você.</p>
+        </div>
+      </section>
+
+      <section id="projetos" class="projects">
+        <h2 style="margin-bottom:12px">Projetos</h2>
+        <div class="grid">
+          <div class="thumb">Projeto 1</div>
+          <div class="thumb">Projeto 2</div>
+          <div class="thumb">Projeto 3</div>
+          <div class="thumb">Projeto 4</div>
+          <div class="thumb">Projeto 5</div>
+          <div class="thumb">Projeto 6</div>
+        </div>
+      </section>
+
+      <section id="contato" class="contact">
+        <form action="#" onsubmit="alert('Formulário de exemplo — configure um servidor para enviar.');return false;">
+          <h3>Me envie uma mensagem</h3>
+          <label for="nome">Nome</label>
+          <input id="nome" placeholder="Seu nome" required>
+
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="seu@email.com" required>
+
+          <label for="mensagem">Mensagem</label>
+          <textarea id="mensagem" placeholder="O que você quer conversar?" required></textarea>
+
+          <div style="margin-top:12px;display:flex;gap:10px;">
+            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-ghost" type="reset">Limpar</button>
+          </div>
+        </form>
+
+        <div style="align-self:start">
+          <h3>Informações</h3>
+          <p class="muted">Você pode colocar links para GitHub, LinkedIn, ou um pequeno currículo PDF aqui.</p>
+          <ul class="muted" style="margin-top:10px;list-style:none;padding-left:0">
+            <li>📧 exemplo@email.com</li>
+            <li>📍 São Paulo, Brasil</li>
+            <li>💼 Front-end / UI</li>
+          </ul>
+        </div>
+      </section>
+
+    </main>
+
+    <footer>
+      <div style="display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;align-items:center">
+        <div class="muted">© " + new Date().getFullYear() + " Cleidosvaldo</div>
+        <div class="muted">Feito com ❤️ em HTML/CSS</div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Pequeno script para atualizar o ano no rodapé (se necessário)
+    (function(){
+      try{
+        const el = document.querySelector('footer .muted');
+        if(el) el.textContent = '© ' + new Date().getFullYear() + ' Cleidosvaldo';
+      }catch(e){/* silencioso */}
+    })();
+  </script>
+</body>
+</html>

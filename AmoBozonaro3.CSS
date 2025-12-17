@@ -1,0 +1,55 @@
+body{
+color: black;
+background-color: black;
+}
+
+h1{
+color: red;
+border: 10px double red;
+}
+
+.banner{
+color: red;
+}
+
+.cartaz{
+
+}
+
+.banner,.cartaz{
+text-align: center;
+
+border: 10px solid;
+font-family: fantasy;
+}
+
+.shaders{
+height: 100px;
+width: 150px;;
+border-radius: 10px;
+opacity: 0.5;
+border: 3px;
+}
+
+.shaders:hover{
+opacity: 1;
+}
+
+#steve{
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
